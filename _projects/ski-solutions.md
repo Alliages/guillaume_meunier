@@ -10,6 +10,7 @@ ownership:
 client: Ski Solutions
 time_period: 2017
 thumbnail: "/projects/ski-solutions/plist-ski-solutions.jpg"
+url: https://www.skisolutions.com
 
 website:
   button_text: Visit the site
