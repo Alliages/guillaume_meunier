@@ -22,7 +22,7 @@ title: Guillaume Meunier
 long-title: Guillaume Meunier list
 email: alliages@gmail.com
 description: "Tous mes liens web"
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/guillaume_meunier" # the subpath of your site, e.g. /blog
 url: "https://alliages.github.io/guillaume_meunier" # the base hostname & protocol for your site
 timezone: Europe/London
 year: 2024
