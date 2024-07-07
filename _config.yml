@@ -32,12 +32,12 @@ sitemap: true
 # Social networks
 social-username:
   twitter: "@alliages"
-  linkedin: "guillaumemeunier"
+  linkedin: "meunierguillaume"
   github: "alliages"
-  medium: "@alliages"
-  pinterest: "alliages"
+  medium: "@guillaume-meunier"
   instagram: "alliages"
   flickr: "alliages"
+  joomeo: "alliages"
 
 # Content
 image_serve_path: "images" # <img src="{{ site.image_serve_path }}/projects/img.jpg">
