@@ -2,7 +2,7 @@
 date: 2017-6-1
 published: true
 title: "Ski Solutions"
-description: "Responsive experience redesign for a tailor-made ski tour operator"
+description: "Mon texte de description"
 categories: website, ux, mobile
 disciplines: UX, Responsive web design, HTML/CSS
 media: Website
