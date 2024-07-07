@@ -40,7 +40,7 @@ social-username:
   flickr: "alliages"
 
 # Content
-image_serve_path: "/images" # <img src="{{ site.image_serve_path }}/projects/img.jpg">
+image_serve_path: "guillaume_meunier/images" # <img src="{{ site.image_serve_path }}/projects/img.jpg">
 
 # Build settings
 markdown: kramdown
@@ -67,9 +67,7 @@ compress_html: # http://jch.penibelst.de/
 # Structure
 navigation:
   - title: Projects
-    url: /
-  - title: Fonts
-    url: /guillaume_meunier/fonts
+    url: /guillaume_meunier/
   - title: About
     url: /guillaume_meunier/about
   - title: Contact
