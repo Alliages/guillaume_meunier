@@ -1,7 +1,7 @@
 ---
 date: 2017-6-1
 published: true
-title: "Ski Solutions"
+title: "Le titre"
 description: "Mon texte de description"
 categories: website, ux, mobile
 disciplines: UX, Responsive web design, HTML/CSS
@@ -10,7 +10,7 @@ ownership:
 client: Ski Solutions
 time_period: 2017
 thumbnail: "/projects/ski-solutions/plist-ski-solutions.jpg"
-url: https://www.skisolutions.com
+url: "https://www.skisolutions.com"
 
 website:
   button_text: Visit the site
