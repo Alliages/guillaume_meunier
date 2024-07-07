@@ -26,28 +26,4 @@ intro: |
   mobile, tablet and desktop, creating a CSS framework and icon font to maintain
   consistency with the colours, geometry and component styles.
 
-content_layout:
-  - section_layout: 1col
-    images:
-      - caption:
-        description: 'Homepage'
-        url: '/projects/ski-solutions/ski-solutions-homepage.jpg'
-        width:
-        height:
-
-  - section_layout: 1col
-    images:
-      - caption:
-        description: 'Property listing'
-        url: '/projects/ski-solutions/ski-solutions-listing.jpg'
-        width:
-        height:
-
-  - section_layout: 1col
-    images:
-      - caption:
-        description: 'Property'
-        url: '/projects/ski-solutions/ski-solutions-property.jpg'
-        width:
-        height:
 ---
