@@ -69,11 +69,11 @@ navigation:
   - title: Projects
     url: /
   - title: Fonts
-    url: /fonts
+    url: /guillaume_meunier/fonts
   - title: About
-    url: /about
+    url: /guillaume_meunier/about
   - title: Contact
-    url: /contact
+    url: /guillaume_meunier/contact
 
 permalink: /:title/
 
