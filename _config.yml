@@ -19,9 +19,9 @@ include:
 
 # Site settings
 title: Guillaume Meunier
-long-title: Guillaume Meunier list
+long-title: Les travaux et publications de Guillaume Meunier
 email: alliages@gmail.com
-description: "Tous mes liens web"
+description: "Toutes mes publications en un seul endroit"
 baseurl: "/guillaume_meunier" # the subpath of your site, e.g. /blog
 url: "https://alliages.github.io" # the base hostname & protocol for your site
 timezone: Europe/London
@@ -66,9 +66,9 @@ compress_html: # http://jch.penibelst.de/
 
 # Structure
 navigation:
-  - title: Projects
+  - title: Carbone
     url: /guillaume_meunier/
-  - title: About
+  - title: A propos
     url: /guillaume_meunier/about
   - title: Contact
     url: /guillaume_meunier/contact
@@ -80,9 +80,7 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
-  fonts:
-    output: true
-    permalink: /fonts/:path/
+
 
 defaults:
   - scope:
@@ -90,8 +88,4 @@ defaults:
       type: "projects"
     values:
       layout: "project"
-  - scope:
-      path: ""
-      type: "fonts"
-    values:
-      layout: "font"
+
