@@ -11,6 +11,7 @@ client: GM
 time_period: 2024
 thumbnail: "/projects/liste_post/liste_post_small.png"
 url : "https://raindrop.io/guillaume_meunier/tout-and-rien-39297695/sort=-created&perpage=30&page=0"
+lien : "https://raindrop.io/guillaume_meunier/tout-and-rien-39297695/sort=-created&perpage=30&page=0"
 
 
 
