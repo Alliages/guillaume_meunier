@@ -2,7 +2,7 @@
 date: 2024-01-01
 published: true
 title: "Tout&Rien - Tous mes posts Linkedin"
-description: "La liste de tous mes posts"
+description: "Gestionnaire de mes posts"
 categories: liste, post
 disciplines: post
 media: Website
