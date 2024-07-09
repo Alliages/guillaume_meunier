@@ -7,11 +7,11 @@ priority: 1.0
 ---
 
 <div class="projects-intro-wrapper">
-  <p class="projects-intro type-level-1">Guillaume Meunier</p>
+  <p class="projects-intro type-level-1">Toutes les lectures</p>
 </div>
 
 <div class="projects">
-{% for project in site.projects reversed limit:include.limit %}
+{% for project in site.projects limit:include.limit %}
   <article class="project-listing">
     <div class="thumbnail-wrapper">
       <a href="{{ project.lien }}">
