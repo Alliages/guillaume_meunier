@@ -22,8 +22,8 @@ title: Guillaume Meunier
 long-title: Les travaux et publications de Guillaume Meunier
 email: alliages@gmail.com
 description: "Toutes mes publications en un seul endroit"
-baseurl: "/guillaume_meunier" # the subpath of your site, e.g. /blog
-url: "https://alliages.github.io" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://guillaume-meunier.fr" # the base hostname & protocol for your site
 timezone: Europe/London
 year: 2024
 start-year: 2024
@@ -67,11 +67,11 @@ compress_html: # http://jch.penibelst.de/
 # Structure
 navigation:
   - title: Carbone
-    url: /guillaume_meunier/
+    url: /
   - title: A propos
-    url: /guillaume_meunier/about
+    url: /about
   - title: Contact
-    url: /guillaume_meunier/contact
+    url: /contact
 
 permalink: /:title/
 

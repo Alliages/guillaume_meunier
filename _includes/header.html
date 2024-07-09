@@ -1,16 +1,15 @@
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
-    "@type": "WebSite",
-    "name": "{{ site.title }}",
-    "alternateName": "{{ site.long-title }}",
-    "url": "http://www.himatt.com"
-  }
-  {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "url": "http://www.himatt.com",
-    "logo": "http://www.himatt.com/images/mg-logo.png"
+    "@type": "Person",
+    "name": "Guillaume Meunier",
+    "url": "https://alliages.github.io/guillaume_meunier/",
+    "sameAs": [
+      "https://twitter.com/{{ site.social-username.twitter }}",
+      "https://instagram.com/{{ site.social-username.instagram }}",
+      "https://linkedin.com/in/{{ site.social-username.linkedin }}",
+      "https://medium.com/{{ site.social-username.medium }}"
+    ]
   }
 </script>
 
@@ -22,7 +21,7 @@
     <div class="logo-nav-wrapper">
       <div class="logo-title-wrapper">
         <div class="logo">
-          <a href="{{ site.baseurl }}/" aria-label="Homepage, Matt Grey Design">
+          <a href="{{ site.baseurl }}/" aria-label="Acceuil Guillaume Meunier">
             {% include logo.svg %}
           </a>
         </div>
