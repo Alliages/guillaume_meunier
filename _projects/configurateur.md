@@ -1,7 +1,7 @@
 ---
 date: 2024-01-02
 published: true
-title: "Configurateur"
+title: "Les Configurateurs"
 description: "La liste des configurateurs de FDES RE2020"
 categories: liste, post
 disciplines: post
