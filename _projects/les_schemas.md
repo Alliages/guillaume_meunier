@@ -2,7 +2,7 @@
 date: 2024-01-05
 published: true
 title: "Tous les schémas"
-description: "Tous les schémas, ceux que je crée ou ceux qui m'intéressent"
+description: "Tous les schémas, ceux que je crée ou ceux qui m'intéressent téléchargeable"
 categories: liste, post
 disciplines: post
 media: Website

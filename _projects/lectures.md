@@ -2,7 +2,7 @@
 date: 2024-01-03
 published: true
 title: "Lectures recommandées"
-description: "Une liste de lectures, livres, post, sites web, podcasts et même films"
+description: "Un powerpoint avec une liste de lectures, livres, post, sites web, podcasts et même films"
 categories: liste, post
 disciplines: post
 media: Website
