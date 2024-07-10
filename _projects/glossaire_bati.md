@@ -1,5 +1,5 @@
 ---
-date: 2024-01-05
+date: 2024-01-02
 published: true
 title: "Glossaire Bâtiment"
 description: "Le glossaire des mots, acronymes et unités souvent utilisés dans le monde du bâtiment autour de l’analyse de cycle de vie"

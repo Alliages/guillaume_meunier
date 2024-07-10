@@ -1,5 +1,5 @@
 ---
-date: 2024-01-10
+date: 2024-01-03
 published: true
 title: "Lectures recommandées"
 description: "Une liste de lectures, livres, post, sites web, podcasts et même films"
