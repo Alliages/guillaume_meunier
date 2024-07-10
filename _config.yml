@@ -12,16 +12,18 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
+  - google1f891d7e1c888d33.html
+  - CNAME
 
 include:
   - _pages
   - _redirects
 
 # Site settings
-title: Guillaume Meunier
+title: Site web personnel de Guillaume Meunier
 long-title: Les travaux et publications de Guillaume Meunier
 email: alliages@gmail.com
-description: "Toutes mes publications en un seul endroit"
+description: "Les travaux et publications de Guillaume Meunier"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://guillaume-meunier.fr" # the base hostname & protocol for your site
 timezone: Europe/London
