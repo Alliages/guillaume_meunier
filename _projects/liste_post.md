@@ -2,7 +2,7 @@
 date: 2023-01-01
 published: true
 title: "Tout&Rien - Tous mes posts Linkedin"
-description: "Retrouvez, cherchez, classez tous mes posts dans une interface simple : Raindrop"
+description: "Retrouvez, cherchez, classez tous mes posts (et interventions) dans une interface simple : Raindrop"
 categories: liste, post
 disciplines: post
 media: Website
