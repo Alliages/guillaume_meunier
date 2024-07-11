@@ -23,7 +23,7 @@ include:
 title: Site web personnel de Guillaume Meunier
 long-title: Les travaux et publications de Guillaume Meunier
 email: alliages@gmail.com
-description: "Les travaux et publications de Guillaume Meunier"
+description: "Tout pour decarboner la construction, les travaux et publications de Guillaume Meunier"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://guillaume-meunier.fr" # the base hostname & protocol for your site
 timezone: Europe/London
