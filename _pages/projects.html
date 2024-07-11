@@ -19,7 +19,7 @@ thumbnail: "/guillaume-meunier_thumbnail.jpg"
         <div class="thumbnail-description-wrapper">
           <img src="{{ project.thumbnail | prepend: site.image_serve_path }}" alt="{{ project.title }}" width="600" height="450" {% if project.border %}style="border: 5px solid #EBBE3C;"{% endif %}>
           <p class="thumbnail-description">
-            <span>{{ project.description }}</span>
+            <span {% if project.border %}style="color:#EBBE3C;font-weight:bold;"{% endif %}>{{ project.description }}</span>
           </p>
         </div>
         <h3 aria-hidden="true">{{ project.title }}</h3>
