@@ -1,5 +1,5 @@
 ---
-date: 2023-01-30
+date: 2024-01-30
 published: true
 title: "Boite à Outils - Unisson(s)"
 description: "Une liste d'outils pour concevoir bas carbone que je mets à jour régulièrement"
@@ -9,7 +9,7 @@ media: Website
 ownership: GM
 client: GM
 time_period: 2024
-thumbnail: "/projects/Unissons/Unissons.png"
+thumbnail: "/projects/Unissons/Unissons.jpg"
 url: "https://unissons.eu/boite-a-outils/"
 lien: "https://unissons.eu/boite-a-outils/"
 

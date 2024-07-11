@@ -1,5 +1,5 @@
 ---
-date: 2023-01-28
+date: 2024-01-28
 published: true
 title: "Le Hub des Prescripteurs Bas Carbone"
 description: "Une série de rapports abordant tous les sujets de la construction bas carbone"
@@ -9,7 +9,7 @@ media: Website
 ownership: GM
 client: GM
 time_period: 2024
-thumbnail: "/projects/HUB_BC/HUB_BC.png"
+thumbnail: "/projects/HUB_BC/HUB_BC.jpg"
 url: "https://www.ifpeb.fr/travaux/le-hub-des-prescripteurs-bas-carbone/"
 lien: "https://www.ifpeb.fr/travaux/le-hub-des-prescripteurs-bas-carbone/"
 
