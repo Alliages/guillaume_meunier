@@ -4,7 +4,7 @@ title_override: Guillaume Meunier
 redirect_from: /
 permalink: /
 priority: 1.0
-thumbnail: /guillaume-meunier_thumbnail.jpg
+thumbnail: "/guillaume-meunier_thumbnail.jpg"
 ---
 
 <div class="projects-intro-wrapper">
@@ -17,7 +17,7 @@ thumbnail: /guillaume-meunier_thumbnail.jpg
     <div class="thumbnail-wrapper">
       <a href="{{ project.lien }}">
         <div class="thumbnail-description-wrapper">
-          <img src="{{ project.thumbnail | prepend: site.image_serve_path }}" alt="{{ project.title }}" width="600" height="450">
+          <img src="{{ project.thumbnail | prepend: site.image_serve_path }}" alt="{{ project.title }}" width="600" height="450" {% if project.border %}border: 5px solid #555;{% endif %}>
           <p class="thumbnail-description">
             <span>{{ project.description }}</span>
           </p>
