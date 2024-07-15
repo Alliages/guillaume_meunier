@@ -10,8 +10,8 @@ ownership: GM
 client: GM
 time_period: 2024
 thumbnail: "/projects/lectures/lectures.jpg"
-url : "https://docs.google.com/presentation/d/1ZVCZvHWoCpfwa3zzZ_OpKHwjV35wmMrd/edit#slide=id.p1"
-lien : "https://docs.google.com/presentation/d/1ZVCZvHWoCpfwa3zzZ_OpKHwjV35wmMrd/edit#slide=id.p1"
+url : "https://docs.google.com/presentation/d/1ZVCZvHWoCpfwa3zzZ_OpKHwjV35wmMrd/"
+lien : "https://docs.google.com/presentation/d/1ZVCZvHWoCpfwa3zzZ_OpKHwjV35wmMrd/"
 
 
 
