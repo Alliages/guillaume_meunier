@@ -40,6 +40,7 @@ social-username:
   instagram: "alliages"
   flickr: "alliages"
   joomeo: "alliages"
+  youtube: "@meunier_guillaume"
 
 # Content
 image_serve_path: "images" # <img src="{{ site.image_serve_path }}/projects/img.jpg">
