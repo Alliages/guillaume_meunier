@@ -69,8 +69,10 @@ compress_html: # http://jch.penibelst.de/
 
 # Structure
 navigation:
-  - title: Carbone
+  - title: Accueil
     url: /
+  - title: Ressources
+    url: /ressources
   - title: A propos
     url: /about
   - title: Contact
