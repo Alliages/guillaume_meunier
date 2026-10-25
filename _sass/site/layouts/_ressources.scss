@@ -1,0 +1,168 @@
+// Page Ressources (/ressources/) : frise, filtres, liste
+// Couleurs des sources : réutilisent le jaune et le rose du site
+$ressources-couleurs: (
+  linkedin:  rgba(255, 255, 255, .55),
+  article:   rgb(235, 190, 60),
+  blog:      #EA526F,
+  lien:      #6FB3D2,
+  ressource: #7BC8A4
+);
+$ressources-hauteur-frise: rem(140px);
+
+.ressources {
+  max-width: rem(1100px);
+  margin: 0 auto;
+  padding: 0 var(--page-margin) var(--page-margin);
+
+  // ── Introduction
+  .ressources-intro {
+    max-width: rem(760px);
+    margin-bottom: rem(40px);
+    h1 { margin-bottom: rem(20px); }
+  }
+  .ressources-chiffres {
+    font-size: var(--font-size-small);
+    letter-spacing: var(--font-letter-spacing-subtle);
+    color: var(--color-highlight);
+  }
+
+  // ── Frise
+  .ressources-frise { margin-bottom: rem(32px); }
+  .frise-phases {
+    display: flex;
+    border-bottom: 1px solid var(--color-line-subtle);
+    margin-bottom: rem(8px);
+  }
+  .phase {
+    padding: rem(4px) rem(6px);
+    border-left: 1px solid var(--color-line);
+    font-size: var(--font-size-xsmall);
+    line-height: var(--line-height-tiny);
+    color: var(--color-line);
+    overflow: hidden;
+  }
+  .frise-barres {
+    display: flex;
+    align-items: stretch;
+    gap: rem(4px);
+    height: $ressources-hauteur-frise;
+  }
+  .barre {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    color: var(--color-line);
+    &:hover .barre-pile, &:focus-visible .barre-pile { opacity: 1; outline: 1px solid var(--color-line); }
+    &[aria-pressed="true"] { color: var(--color-highlight); .barre-pile { outline: 2px solid var(--color-highlight); } }
+  }
+  .barre-pile {
+    flex: 1;
+    display: flex;
+    flex-direction: column-reverse;   // la 1re source empilée en bas
+    justify-content: flex-start;
+    gap: 1px;
+  }
+  .seg { display: block; min-height: 2px; }
+  @each $source, $couleur in $ressources-couleurs {
+    .seg--#{$source} { background: $couleur; }
+    .puce--#{$source}::before { background: $couleur; }
+  }
+  .barre-an { font-size: var(--font-size-xsmall); padding-top: rem(4px); }
+
+  // ── Filtres
+  .ressources-filtres {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: var(--color-background);
+    padding: rem(12px) 0;
+    border-bottom: 1px solid var(--color-line-subtle);
+  }
+  .filtre-recherche {
+    width: 100%;
+    padding: rem(10px) rem(12px);
+    font-size: var(--font-size-normal);
+    color: var(--color-text-inverted);
+    background: var(--color-form-background);
+    border: 0;
+    border-radius: 2px;
+  }
+  .filtre-puces {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(6px);
+    margin-top: rem(10px);
+  }
+  .puce {
+    font-size: var(--font-size-xsmall);
+    padding: rem(4px) rem(10px);
+    color: var(--color-text);
+    background: none;
+    border: 1px solid var(--color-line-subtle);
+    border-radius: rem(14px);
+    cursor: pointer;
+    &:hover { border-color: var(--color-line); }
+    &[aria-pressed="true"] { border-color: var(--color-highlight); color: var(--color-highlight); }
+    &[class*="puce--"]::before {
+      content: "";
+      display: inline-block;
+      width: rem(8px);
+      height: rem(8px);
+      margin-right: rem(6px);
+      border-radius: 50%;
+    }
+  }
+  .filtre-etat {
+    margin: rem(10px) 0 0;
+    font-size: var(--font-size-small);
+    color: var(--color-line);
+  }
+  .filtre-reset {
+    background: none;
+    border: 0;
+    color: var(--color-cta);
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  // ── Liste
+  .annee-titre {
+    margin: rem(40px) 0 rem(12px);
+    font-size: var(--font-size-level-3);
+    small {
+      font-size: var(--font-size-small);
+      color: var(--color-line);
+      margin-left: rem(10px);
+    }
+  }
+  .carte {
+    padding: rem(14px) 0 rem(14px) rem(14px);
+    border-left: 3px solid var(--color-line-subtle);
+    margin-bottom: rem(4px);
+  }
+  @each $source, $couleur in $ressources-couleurs {
+    .carte--#{$source} { border-left-color: $couleur; }
+  }
+  .carte-meta {
+    margin: 0 0 rem(4px);
+    font-size: var(--font-size-xsmall);
+    color: var(--color-line);
+  }
+  .carte-titre {
+    margin: 0 0 rem(4px);
+    font-size: var(--font-size-normal);
+    line-height: var(--line-height-tight);
+    a { color: var(--color-text); }
+  }
+  .carte-extrait {
+    margin: 0;
+    font-size: var(--font-size-small);
+    color: var(--color-line);
+  }
+  .ressources-plus { margin-top: rem(24px); }
+  .ressources-vide { color: var(--color-line); }
+}

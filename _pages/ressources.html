@@ -1,0 +1,47 @@
+---
+layout: page
+title: Ressources
+permalink: /ressources/
+priority: 0.9
+description: "Quinze ans de posts, d'articles et d'outils sur la construction bas carbone, à chercher par thème ou par année"
+---
+{% comment %}
+  Page Ressources : frise 2011-2026 + recherche + filtres.
+  Données : /assets/ressources.json, généré par exporter_ressources.py (projet « Mes posts »).
+  Logique : _includes/javascript/ressources.js · Styles : _sass/site/layouts/_ressources.scss
+{% endcomment %}
+
+<div class="ressources" data-source="{{ '/assets/ressources.json' | prepend: site.baseurl }}">
+
+  <header class="ressources-intro">
+    <h1 class="type-level-1">Ressources</h1>
+    <p class="paragraph-normal">
+      15 années de posts, d’articles et d’outils sur la construction bas carbone et plus largement
+      sur la construction environnementale, à chercher par mot, par thème ou par année.
+    </p>
+    <p class="ressources-chiffres" data-chiffres></p>
+  </header>
+
+  <!-- Frise : une colonne par année, empilée par source ; clic = filtre année -->
+  <section class="ressources-frise" aria-label="Frise des publications par année">
+    <div class="frise-phases" data-phases></div>
+    <div class="frise-barres" data-barres></div>
+  </section>
+
+  <!-- Filtres -->
+  <section class="ressources-filtres" aria-label="Filtres">
+    <input type="search" class="filtre-recherche" placeholder="Rechercher (ex. RE2020, confort d'été, bois…)" aria-label="Rechercher" data-recherche>
+    <div class="filtre-puces" data-sources aria-label="Sources"></div>
+    <div class="filtre-puces filtre-puces--cat" data-categories aria-label="Catégories"></div>
+    <p class="filtre-etat"><span data-compteur></span> <button type="button" class="filtre-reset" data-reset hidden>Tout réafficher</button></p>
+  </section>
+
+  <!-- Liste chronologique, groupée par année -->
+  <section class="ressources-liste" data-liste aria-live="polite"></section>
+  <button type="button" class="button-secondary ressources-plus" data-plus hidden>Voir plus</button>
+
+</div>
+
+<script>
+  {% include javascript/ressources.js %}
+</script>
