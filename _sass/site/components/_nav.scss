@@ -111,25 +111,21 @@
         display: block;
         padding: var(--inner-padding);
 
-        &:hover {
-          background: rgba(var(--color-text), .2);
+        // Version en gras invisible : réserve la largeur pour que le menu ne « saute » pas au survol
+        &:after {
+          content: attr(data-titre);
+          display: block;
+          height: 0;
+          overflow: hidden;
+          visibility: hidden;
+          font-weight: 700;
         }
 
-        &.current {
-          background: rgba(var(--color-text), .4);
-
-          &:focus {
-            color: gray;
-            border-color: gray;
-          }
-
-          &:after {
-            content: 'Current section';
-            text-transform: uppercase;
-            float: right;
-            font-size: var(--font-size-body-small);
-            margin-top: rem(4px);
-          }
+        &:hover,
+        &:focus {
+          background: rgba(var(--color-text), .2);
+          font-weight: 700;
+          text-decoration: underline;
         }
       }
     }
@@ -163,25 +159,10 @@
           &:focus,
           &:active {
             background: inherit;
-            border-top: none;
-            border-right: none;
-            border-bottom: 1px solid;
-            border-left: none;
+            font-weight: 700;
+            text-decoration: underline;
             opacity: 1;
             outline: 0;
-          }
-
-          &.current {
-            border-top: none;
-            border-right: none;
-            border-bottom: 1px solid;
-            border-left: none;
-            opacity: 1;
-            background: inherit;
-
-            &:after {
-              @include visually-hidden;
-            }
           }
         }
       }
