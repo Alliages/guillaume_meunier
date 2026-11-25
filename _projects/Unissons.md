@@ -1,7 +1,7 @@
 ---
 date: 2024-01-30
 published: true
-title: "Boite à Outils - Unisson(s)"
+title: "Boîte à Outils - Unisson(s)"
 description: "Une liste d'outils pour concevoir bas carbone que je mets à jour régulièrement"
 categories: liste, post
 disciplines: post

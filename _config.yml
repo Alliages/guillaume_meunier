@@ -20,13 +20,13 @@ include:
   - _redirects
 
 # Site settings
-title: Decarbonez! Site web personnel de Guillaume Meunier
+title: Décarbonez ! Site web personnel de Guillaume Meunier
 long-title: Les travaux et publications de Guillaume Meunier
 email: alliages@gmail.com
-description: "Tout pour decarboner la construction, les travaux et publications de Guillaume Meunier"
+description: "Tout pour décarboner la construction, les travaux et publications de Guillaume Meunier"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://guillaume-meunier.fr" # the base hostname & protocol for your site
-timezone: Europe/London
+timezone: Europe/Paris
 year: 2024
 start-year: 2024
 sitemap: true
@@ -72,11 +72,11 @@ navigation:
   - title: Accueil
     url: /
   - title: Ressources
-    url: /ressources
-  - title: A propos
-    url: /about
+    url: /ressources/
+  - title: À propos
+    url: /about/
   - title: Contact
-    url: /contact
+    url: /contact/
 
 permalink: /:title/
 

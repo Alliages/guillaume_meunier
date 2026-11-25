@@ -1,2 +1,15 @@
 .keep-line-wrap { display: inline-block; }
 .screenreader-only { @include visually-hidden; }
+
+// Respect de « réduire les animations » (préférence système)
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    transition-delay: 0s !important;
+    scroll-behavior: auto !important;
+  }
+}

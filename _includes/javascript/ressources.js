@@ -15,6 +15,7 @@
     lien:      'Presse et vidéos',
     ressource: 'Outils du site'
   };
+  var FORMAT_NOMBRE = new Intl.NumberFormat('fr-FR');
   var MOIS = ['janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.'];
 
   var el = {
@@ -103,8 +104,8 @@
         return c[s] ? '<span class="seg seg--' + s + '" style="height:' + (100 * c[s] / max) + '%"></span>' : '';
       }).join('');
       return '<button type="button" class="barre" data-annee="' + an + '" aria-pressed="' + (etat.annee === an) +
-        '" title="' + an + ' : ' + c.total + ' publication(s)"><span class="barre-pile">' + segments +
-        '</span><span class="barre-an">' + an.slice(4) + '</span></button>';
+        '" title="' + an + ' : ' + c.total + ' publication(s)" aria-label="' + an + ' : ' + c.total + ' publication(s)"><span class="barre-pile">' + segments +
+        '</span><span class="barre-an">' + an.slice(2) + '</span></button>';
     }).join('');
 
     /* Bandeau des phases : largeur proportionnelle au nombre d'années */
@@ -138,6 +139,8 @@
   function rendrePaquet() {
     var html = '';
     var anneePrecedente = affiches ? resultats[affiches - 1].date.slice(0, 4) : '';
+    var avaitLeFocus = document.activeElement === el.plus;
+    var dejaAffichees = el.liste.querySelectorAll('.carte-titre a').length;
     resultats.slice(affiches, affiches + TAILLE_PAQUET).forEach(function (it) {
       var an = it.date.slice(0, 4);
       if (an !== anneePrecedente) {
@@ -149,12 +152,17 @@
     el.liste.insertAdjacentHTML('beforeend', html);
     affiches = Math.min(affiches + TAILLE_PAQUET, resultats.length);
     el.plus.hidden = affiches >= resultats.length;
+    /* Le bouton se masque au dernier lot : on garde le focus clavier dans la liste */
+    if (avaitLeFocus && el.plus.hidden) {
+      var liens = el.liste.querySelectorAll('.carte-titre a');
+      if (liens[dejaAffichees]) { liens[dejaAffichees].focus(); }
+    }
   }
   function rendre() {
     resultats = donnees.items.filter(function (it) { return correspond(it); });
     affiches = 0;
     el.liste.innerHTML = resultats.length ? '' : '<p class="ressources-vide">Aucun résultat.</p>';
-    el.compteur.textContent = resultats.length + ' publication' + (resultats.length > 1 ? 's' : '');
+    el.compteur.textContent = FORMAT_NOMBRE.format(resultats.length) + ' publication' + (resultats.length > 1 ? 's' : '');
     el.reset.hidden = !(etat.q || etat.annee || etat.cat || etat.source);
     rendreFrise();
     rendrePuces();
@@ -193,7 +201,7 @@
       it._index = normaliser(it.titre + ' ' + it.extrait + ' ' + it.categorie);
     });
     var nbItems = donnees.items.length;
-    el.chiffres.textContent = nbItems + ' publications · ' + ANNEE_DEBUT + '-' + ANNEE_FIN + ' · ' +
+    el.chiffres.textContent = FORMAT_NOMBRE.format(nbItems) + ' publications · ' + ANNEE_DEBUT + '-' + ANNEE_FIN + ' · ' +
       donnees.categories.length + ' thèmes';
     lireUrl();
     rendre();

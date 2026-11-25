@@ -1,7 +1,7 @@
 ---
 date: 2024-01-20
 published: true
-title: "L'architecure oubliée"
+title: "L'architecture oubliée"
 description: "L'architecture est la grande oubliée de la transition mondiale, un long texte"
 categories: liste, post
 disciplines: post
