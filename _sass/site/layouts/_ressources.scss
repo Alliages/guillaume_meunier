@@ -81,6 +81,7 @@ $ressources-hauteur-frise: rem(140px);
     background: var(--color-background);
     padding: rem(12px) 0;
     border-bottom: 1px solid var(--color-line-subtle);
+    transition: top 200ms ease;
   }
   .filtre-recherche {
     width: 100%;
@@ -165,4 +166,9 @@ $ressources-hauteur-frise: rem(140px);
   }
   .ressources-plus { margin-top: rem(24px); }
   .ressources-vide { color: var(--color-line); }
+}
+
+// L'en-tête fixe (au-dessus de tout) réapparaît au scroll vers le haut : le bandeau de filtres descend sous lui
+body:has(.sticky-header--fixed:not(.sticky-header--hidden)) .ressources .ressources-filtres {
+  top: rem(77px);
 }

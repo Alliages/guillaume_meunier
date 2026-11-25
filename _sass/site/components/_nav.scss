@@ -44,6 +44,8 @@
     ul {
       display: block;
       opacity: 1;
+      visibility: visible;
+      transition: max-height 150ms ease-in-out, visibility 0s;
       overflow-y: auto;
       overflow-x: hidden;
       max-height: 80vh;
@@ -51,7 +53,7 @@
     }
   }
 
-  a.mobile-nav {
+  button.mobile-nav {
     display: inline-block;
     float: right;
     right: var(--page-margin);
@@ -62,15 +64,25 @@
     color: var(--color-text);
     text-decoration: none;
     position: static;
+    // Réinitialisation du style natif du <button>
+    background: transparent;
+    font: inherit;
+    line-height: inherit;
+    margin: 0;
+    cursor: pointer;
 
     &:hover,
     &:focus {
-      background: rgba(var(--color-text), 0.2);
-      outline: 0;
+      background: rgba(var(--color-primary), 0.2);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-highlight);
+      outline-offset: 2px;
     }
 
     &:active {
-      background: rgba(var(--color-text), 0.3);
+      background: rgba(var(--color-primary), 0.3);
     }
 
     @include grid-media(tablet) {
@@ -83,7 +95,8 @@
     padding: 0;
     margin: 0;
     opacity: 0;
-    transition: max-height 150ms ease-in-out;
+    visibility: hidden;
+    transition: max-height 150ms ease-in-out, visibility 0s linear 150ms;
     position: fixed;
     overflow: hidden;
     left: var(--page-margin);
@@ -123,7 +136,7 @@
 
         &:hover,
         &:focus {
-          background: rgba(var(--color-text), .2);
+          background: rgba(var(--color-primary), .2);
           font-weight: 700;
           text-decoration: underline;
         }
@@ -132,6 +145,7 @@
 
     @include grid-media(tablet) {
       display: block;
+      visibility: visible;
       max-height: none;
       position: static;
       text-align: right;
@@ -153,7 +167,7 @@
           background-color: inherit;
           border-bottom: 1px solid transparent;
           opacity: 0.7;
-          transition: all 100ms ease-in-out;
+          transition: opacity 100ms ease-in-out, background-color 100ms ease-in-out, border-color 100ms ease-in-out;
 
           &:hover,
           &:focus,

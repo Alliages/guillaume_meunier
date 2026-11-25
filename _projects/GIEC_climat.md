@@ -2,7 +2,7 @@
 date: 2024-01-26
 published: true
 title: "Le GIEC et le climat"
-description: "Un powerpoint qui synthétise ce que dit le GIEC - AR6 - WG1 sur le cimat actuel et futur"
+description: "Un powerpoint qui synthétise ce que dit le GIEC - AR6 - WG1 sur le climat actuel et futur"
 categories: liste, post
 disciplines: Climat
 media: PPT

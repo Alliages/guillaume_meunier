@@ -7,10 +7,14 @@ main li a,
 .formatted-link {
   text-decoration: none;
   color: var(--color-cta);
-  border-bottom: rem(1.2px) dashed;
-  border-bottom-color: transparent;
+  border-bottom: rem(1.2px) dashed var(--color-cta);
 
   &:hover {
-    border-bottom-color: var(--color-cta);
+    border-bottom-style: solid;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-highlight);
+    outline-offset: 2px;
   }
 }

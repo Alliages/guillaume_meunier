@@ -2,7 +2,7 @@
 date: 2024-01-14
 published: true
 title: "Les fichiers météo"
-description: "Une page pour tout comprendre sur les fichiers météo, et sur la météo du futur avec pleins d'outils"
+description: "Une page pour tout comprendre sur les fichiers météo, et sur la météo du futur avec plein d'outils"
 categories: liste, post
 disciplines: post
 media: Website

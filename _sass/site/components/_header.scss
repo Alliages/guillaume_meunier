@@ -133,10 +133,7 @@
 
 // Sticky header behaviour
 .main-header {
-  will-change: transform,
-               background,
-               padding-top,
-               padding-bottom;
+  will-change: transform;
 
   transition: transform 200ms ease,
               background 200ms ease,
@@ -193,7 +190,8 @@
     height: 4em;
   }
 
-  &.sticky-header--hidden:hover {
+  &.sticky-header--hidden:hover,
+  &.sticky-header--hidden:focus-within {
     transform: translate3d(0, 0, 0);
   }
 }

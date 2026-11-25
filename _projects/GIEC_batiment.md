@@ -1,7 +1,7 @@
 ---
 date: 2024-01-24
 published: true
-title: "Le GIEC et la Bâtiment"
+title: "Le GIEC et le Bâtiment"
 description: "Un powerpoint qui synthétise ce que dit le GIEC sur le monde du bâtiment"
 categories: liste, post
 disciplines: Batiment

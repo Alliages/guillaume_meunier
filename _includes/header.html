@@ -1,11 +1,11 @@
 <script type="application/ld+json">
   {
-    "@context": "http://schema.org",
+    "@context": "https://schema.org",
     "@type": "Person",
     "name": "Guillaume Meunier",
     "url": "https://guillaume-meunier.fr",
     "sameAs": [
-      "https://twitter.com/{{ site.social-username.twitter }}",
+      "https://twitter.com/{{ site.social-username.twitter | remove: '@' }}",
       "https://instagram.com/{{ site.social-username.instagram }}",
       "https://linkedin.com/in/{{ site.social-username.linkedin }}",
       "https://medium.com/{{ site.social-username.medium }}"
@@ -16,26 +16,27 @@
 <header class="main-header sticky-header" data-header>
   <div class="header-content">
 
-    <a class="accessibility-skip" href="#maincontent">Skip to main content</a>
+    <a class="accessibility-skip" href="#maincontent">Aller au contenu principal</a>
 
     <div class="logo-nav-wrapper">
       <div class="logo-title-wrapper">
         <div class="logo">
-          <a href="{{ site.baseurl }}/" aria-label="Acceuil Guillaume Meunier">
+          <a href="{{ site.baseurl }}/" aria-label="Accueil Guillaume Meunier">
             {% include logo.svg %}
           </a>
         </div>
       </div>
 
       <nav class="navigation" aria-label="main navigation">
-        <a href="javascript:void(0)" class="mobile-nav">Menu</a>
+        <button type="button" class="mobile-nav" aria-expanded="false" aria-controls="menu-principal">Menu</button>
         <div class="mobile-nav-wrapper">
-          <ul class="mobile-dropdown" itemscope itemtype="http://schema.org/SiteNavigationElement">
+          <ul class="mobile-dropdown" id="menu-principal" itemscope itemtype="http://schema.org/SiteNavigationElement">
           {% for link in site.navigation %}
             {% comment %} Pas de marque « page en cours » : seul le survol met le titre en évidence.
                data-titre sert à réserver la largeur du gras (voir _nav.scss) {% endcomment %}
+            {% assign url_lien = link.url | append: '/' | replace: '//', '/' %}
             <li>
-              <a itemprop="url" href="{{ link.url }}" data-titre="{{ link.title }}"><span itemprop="name">{{ link.title }}</span></a>
+              <a itemprop="url" href="{{ link.url }}" data-titre="{{ link.title }}"{% if page.url == url_lien %} aria-current="page"{% endif %}><span itemprop="name">{{ link.title }}</span></a>
             </li>
           {% endfor %}
           </ul>
